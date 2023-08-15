@@ -741,6 +741,11 @@ header nav+.form{
     margin-top: var(--section-margin);
     margin-bottom: var(--section-margin);
 }
+@media (max-width: 590px) {
+    .about .skills {
+        grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    }
+}
 .about .skills>div{
     height: 100%;
     display: flex;
@@ -762,8 +767,12 @@ header nav+.form{
 }
 .about .skills .testimonials .testimonial{
     display: flex;
-    flex-wrap: wrap;
     margin: 24px 0;
+}
+@media (max-width: 580px) {
+    .about .skills .testimonials .testimonial{
+        min-height: 18vh;
+    }
 }
 .about .skills .testimonials>p {
     margin-top: 42px;
@@ -773,6 +782,11 @@ header nav+.form{
     border-radius: 50%;
     margin-right: 7%;
     margin-top: -1%;
+}
+@media (max-width: 581px) {
+    .about .skills .testimonials .testimonial>img {
+        height: 107px;
+    }
 }
 .about .skills .testimonials .testimonial>img+div{
     border-bottom: 1px solid var(--desc-color);
